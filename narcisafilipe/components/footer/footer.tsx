@@ -1,122 +1,206 @@
 "use client";
 
 import Link from "next/link";
-import { Mail, Phone, MapPin, Clock, Instagram, Facebook, ExternalLink } from "lucide-react";
+import { Instagram, MapPin, Clock, Mail } from "lucide-react";
 
 export function Footer() {
+  const currentYear = new Date().getFullYear();
+
   return (
-    <footer className="w-full bg-gray-100 dark:bg-black border-t border-gray-300/30 dark:border-white/10">
-      <div className="max-w-7xl mx-auto px-6 md:px-12 py-16 grid md:grid-cols-4 gap-12">
+    <footer className="w-full bg-[#FAF9F7] border-t border-[#EFE9E4] pt-24 pb-16">
+      <div className="max-w-7xl mx-auto px-6">
 
-        {/* BRAND */}
-        <div>
-          <h3 className="text-xl font-semibold">Narcisa Filipe</h3>
-          <p className="mt-4 text-sm text-muted-foreground max-w-xs">
-            Terapia capilar profissional focada em diagnóstico, tratamento e recuperação da saúde do couro cabeludo e do cabelo.
-          </p>
-        </div>
+        {/* TOP GRID */}
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-12 md:gap-20 pb-20 border-b border-[#EFE9E4]/50">
 
-        {/* CONTACTOS */}
-        <div>
-          <h4 className="font-semibold mb-4 text-lg">Contactos</h4>
+          {/* BRAND + LOCATION */}
+          <div className="md:col-span-4 space-y-8">
+            <div>
+              <h2 className="text-3xl md:text-4xl font-light tracking-tight text-[#1F1F1F]">
+                NF Studio
+              </h2>
+              <p className="mt-4 text-[#5A3E36] font-light">
+                Hair Therapy & Braiding
+              </p>
+            </div>
 
-          <ul className="space-y-3 text-sm text-muted-foreground">
-            <li className="flex items-center gap-3">
-              <Phone size={16} className="text-primary" />
-              <a href="tel:+244000000000" className="hover:text-primary transition">
-                +244 000 000 000
-              </a>
-            </li>
+            <div className="space-y-4">
+              <div className="flex items-start gap-3">
+                <MapPin
+                  className="w-4 h-4 mt-1 text-[#C2A878]/60 flex-shrink-0"
+                  aria-hidden="true"
+                />
+                <div>
+                  <p className="text-[#5A3E36] font-light">
+                    Leeds, UK
+                  </p>
+                  <a
+                    href="https://maps.google.com/?q=Leeds+UK"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-sm text-[#C2A878] hover:underline mt-2 inline-block"
+                  >
+                    View on maps
+                  </a>
+                </div>
+              </div>
 
-            <li className="flex items-center gap-3">
-              <Mail size={16} className="text-primary" />
-              <a href="mailto:contacto@narcisafilipe.com" className="hover:text-primary transition">
-                contacto@narcisafilipe.com
-              </a>
-            </li>
+              <div className="flex items-start gap-3">
+                <Clock
+                  className="w-4 h-4 mt-1 text-[#C2A878]/60 flex-shrink-0"
+                  aria-hidden="true"
+                />
+                <div>
+                  <p className="text-[#5A3E36] font-light">
+                    By appointment only
+                  </p>
+                  <p className="text-sm text-[#5A3E36]/70 mt-1">
+                    Monday to Saturday • 9am–6pm
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
 
-            <li className="flex items-start gap-3">
-              <MapPin size={16} className="text-primary mt-0.5" />
-              <span>
-                Clínica de Terapia Capilar  
-                <br /> Luanda, Angola
-              </span>
-            </li>
-          </ul>
-        </div>
+          {/* CONTACT + BOOKING */}
+          <div className="md:col-span-4 space-y-10">
+            <div className="space-y-6">
+              <h3 className="text-sm text-[#C2A878] font-light tracking-widest uppercase">
+                Contact
+              </h3>
 
-        {/* HORÁRIO */}
-        <div>
-          <h4 className="font-semibold mb-4 text-lg">Horário</h4>
+              <div className="space-y-4">
 
-          <ul className="space-y-2 text-sm text-muted-foreground">
-            <li className="flex items-center gap-3">
-              <Clock size={16} className="text-primary" />
-              Segunda a Sexta — 09h às 18h
-            </li>
-            <li className="flex items-center gap-3 ml-6">
-              Sábado — 09h às 14h
-            </li>
-            <li className="ml-6">
-              <span className="text-primary font-medium">Domingo — Fechado</span>
-            </li>
-          </ul>
-        </div>
+                {/* EMAIL */}
+                <a
+                  href="mailto:hello@narcisafilipe.com"
+                  className="group flex items-center gap-3 text-[#5A3E36] hover:text-[#C2A878] transition-colors duration-300"
+                >
+                  <Mail
+                    className="w-4 h-4 text-[#C2A878]/60 group-hover:text-[#C2A878] transition-colors"
+                    aria-hidden="true"
+                  />
+                  <span className="text-lg font-light">hello@narcisafilipe.com</span>
+                </a>
 
-        {/* LINKS RÁPIDOS */}
-        <div>
-          <h4 className="font-semibold mb-4 text-lg">Links Rápidos</h4>
+                {/* WhatsApp placeholder (inactive until UK number) */}
+                <a
+                  href="https://wa.me/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group inline-block text-[#5A3E36] hover:text-[#C2A878] transition-colors duration-300 text-sm"
+                >
+                  WhatsApp (coming soon)
+                </a>
+              </div>
+            </div>
 
-          <ul className="space-y-3 text-sm text-muted-foreground">
-            <li>
-              <Link href="/#tratamentos" className="hover:text-primary transition">
-                Tratamentos
+            <div>
+              <Link
+                href="/booking"
+                className="inline-block text-[#5A3E36] hover:text-[#C2A878] font-light transition-colors duration-300"
+              >
+                Book an appointment →
               </Link>
-            </li>
-            <li>
-              <Link href="/contacto" className="hover:text-primary transition">
-                Contacto
-              </Link>
-            </li>
-            <li>
-              <Link href="/agendar" className="hover:text-primary transition">
-                Agendar Consulta
-              </Link>
-            </li>
-            <li>
-              <Link href="/blog" className="hover:text-primary transition">
-                Blog
-              </Link>
-            </li>
-          </ul>
+            </div>
+          </div>
 
-          {/* SOCIAL */}
-          <div className="flex gap-4 mt-6">
-            <a
-              href="https://instagram.com/"
-              target="_blank"
-              className="text-muted-foreground hover:text-primary transition"
-            >
-              <Instagram size={22} />
-            </a>
+          {/* SOCIAL + LINKS */}
+          <div className="md:col-span-4 space-y-10">
+            <div className="space-y-6">
 
-            <a
-              href="https://facebook.com/"
-              target="_blank"
-              className="text-muted-foreground hover:text-primary transition"
-            >
-              <Facebook size={22} />
-            </a>
+              <h3 className="text-sm text-[#C2A878] font-light tracking-widest uppercase">
+                Connect
+              </h3>
+
+              <Link
+                href="https://www.instagram.com/narcisafilipe"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group flex items-center gap-3 text-[#5A3E36] hover:text-[#C2A878] transition-colors duration-300"
+              >
+                <Instagram
+                  className="w-5 h-5 text-[#C2A878]/60 group-hover:text-[#C2A878] transition-colors"
+                  aria-hidden="true"
+                />
+                <span className="text-lg font-light tracking-wide">@narcisafilipe</span>
+              </Link>
+
+              <p className="text-sm text-[#5A3E36]/70 font-light max-w-xs">
+                Follow for studio moments, care insights and new work.
+              </p>
+            </div>
+
+            <div className="space-y-4">
+              <h3 className="text-sm text-[#C2A878] font-light tracking-widest uppercase">
+                Explore
+              </h3>
+
+              <nav className="flex flex-col gap-3">
+                <Link
+                  href="/hair-therapy"
+                  className="text-[#5A3E36] hover:text-[#C2A878] font-light transition-colors duration-300"
+                >
+                  Hair Therapy
+                </Link>
+
+                <Link
+                  href="/braids"
+                  className="text-[#5A3E36] hover:text-[#C2A878] font-light transition-colors duration-300"
+                >
+                  Braids
+                </Link>
+
+                <Link
+                  href="/studio"
+                  className="text-[#5A3E36] hover:text-[#C2A878] font-light transition-colors duration-300"
+                >
+                  The Studio
+                </Link>
+
+                <Link
+                  href="/contact"
+                  className="text-[#5A3E36] hover:text-[#C2A878] font-light transition-colors duration-300"
+                >
+                  Contact
+                </Link>
+              </nav>
+            </div>
           </div>
         </div>
-      </div>
 
-      {/* COPYRIGHT */}
-      <div className="border-t border-gray-300/30 dark:border-white/10 py-6">
-        <p className="text-center text-xs text-muted-foreground">
-          © {new Date().getFullYear()} Narcisa Filipe — Todos os direitos reservados.  
-          Desenvolvido por <a href="https://www.utsupra.agency/" className="text-primary font-medium hover:underline" target="_blank">Utsupra</a>.
-        </p>
+        {/* COPYRIGHT AREA */}
+        <div className="pt-8 flex flex-col md:flex-row justify-between items-center gap-6">
+          <div className="text-center md:text-left">
+            <p className="text-sm text-[#5A3E36]/70 font-light">
+              © {currentYear} NF Studio. All rights reserved.
+            </p>
+            <p className="text-xs text-[#A8A29E] font-light mt-2">
+              Leeds, UK • By appointment only
+            </p>
+          </div>
+
+          <div className="flex gap-8">
+            <Link
+              href="/privacy"
+              className="text-xs text-[#5A3E36]/60 hover:text-[#C2A878] font-light transition-colors duration-300"
+            >
+              Privacy Policy
+            </Link>
+            <Link
+              href="/terms"
+              className="text-xs text-[#5A3E36]/60 hover:text-[#C2A878] font-light transition-colors duration-300"
+            >
+              Terms of Service
+            </Link>
+            <Link
+              href="/cancellation"
+              className="text-xs text-[#5A3E36]/60 hover:text-[#C2A878] font-light transition-colors duration-300"
+            >
+              Cancellation Policy
+            </Link>
+          </div>
+        </div>
       </div>
     </footer>
   );

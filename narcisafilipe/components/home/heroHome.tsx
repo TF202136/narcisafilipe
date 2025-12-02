@@ -67,7 +67,7 @@ export function Hero() {
                          transition-all duration-500
                          shadow-[0_8px_32px_rgba(0,0,0,0.12)]"
             >
-              <Link href="/agendamento">
+              <Link href="/hair-therapy">
                 Hair Therapy
               </Link>
             </Button>

@@ -93,10 +93,10 @@ export function Navbar() {
             >
               <DropdownMenuItem asChild>
                 <Link
-                  href="/terapia-capilar"
+                  href="/hair-therapy"
                   className="rounded-xl px-4 py-3 text-base font-medium text-[#1F1F1F] hover:bg-[#E5E2DE]/50 transition-colors"
                 >
-                  Terapia Capilar
+                  Hair Therapy
                 </Link>
               </DropdownMenuItem>
               <DropdownMenuItem asChild>
@@ -111,8 +111,8 @@ export function Navbar() {
           </DropdownMenu>
 
           {/* CORREÇÃO: Passar scrolled para todos NavLinks */}
-          <NavLink href="/galeria" label="Galeria" scrolled={scrolled} />
-          <NavLink href="/sobre" label="Sobre" scrolled={scrolled} />
+          <NavLink href="/gallery" label="Galeria" scrolled={scrolled} />
+          <NavLink href="/about" label="Sobre" scrolled={scrolled} />
         </div>
 
         {/* CTA Desktop - CORRIGIDO para usar função */}
@@ -139,10 +139,10 @@ export function Navbar() {
               <div className="flex flex-col gap-8 mt-16 px-6">
                 {/* CORREÇÃO: NavLinks no mobile não precisam de scrolled */}
                 <NavLink href="/" label="Home" />
-                <NavLink href="/terapia-capilar" label="Terapia Capilar" />
+                <NavLink href="/hair-therapy" label="Hair Therapy" />
                 <NavLink href="/braids" label="Braids" />
-                <NavLink href="/galeria" label="Galeria" />
-                <NavLink href="/sobre" label="Sobre" />
+                <NavLink href="/gallery" label="Gallery" />
+                <NavLink href="/about" label="About" />
                 <Button className="mt-10 rounded-full bg-[#C2A878] hover:bg-[#B89B6D] text-white font-medium py-7">
                   Agendar
                 </Button>
