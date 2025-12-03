@@ -83,7 +83,7 @@ export function Hero() {
                          hover:border-white/10
                          transition-all duration-500"
             >
-              <Link href="/espaco">
+              <Link href="/braids">
                 Braids
               </Link>
             </Button>
