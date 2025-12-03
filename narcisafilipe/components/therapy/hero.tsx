@@ -88,7 +88,7 @@ export default function HairTherapyHero() {
                 rel="noopener noreferrer"
                 className="inline-block text-[#5A3E36] hover:text-[#C2A878] font-light transition-colors duration-300"
               >
-                Book a consultation
+                Book an avaliation 
               </Link>
 
             </Button>
