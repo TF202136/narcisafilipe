@@ -37,7 +37,7 @@ export function GalleryPreview() {
           </p>
           
           <p className="text-lg text-[#5A3E36]/70 font-light italic max-w-xl mx-auto">
-            @narcisafilipe
+            @narcisafilipe_
           </p>
         </div>
 
