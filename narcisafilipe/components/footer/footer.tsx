@@ -85,23 +85,26 @@ export function Footer() {
 
                 {/* WhatsApp placeholder (inactive until UK number) */}
                 <a
-                  href="https://wa.me/"
+                  href="https://wa.me/+447737891334?text=Hello!%20I%20would%20like%20to%20book%20an%20appointment.%20Can%20you%20assist%20me?"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="group inline-block text-[#5A3E36] hover:text-[#C2A878] transition-colors duration-300 text-sm"
                 >
-                  WhatsApp (coming soon)
+                  WhatsApp
                 </a>
               </div>
             </div>
 
             <div>
               <Link
-                href="/booking"
+                href="https://wa.me/+447737891334?text=Hello!%20I%20would%20like%20to%20book%20an%20appointment.%20Can%20you%20assist%20me?"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-block text-[#5A3E36] hover:text-[#C2A878] font-light transition-colors duration-300"
               >
                 Book an appointment →
               </Link>
+
             </div>
           </div>
 
@@ -151,7 +154,7 @@ export function Footer() {
                   Braids
                 </Link>
 
-                <Link
+                {/* <Link
                   href="/studio"
                   className="text-[#5A3E36] hover:text-[#C2A878] font-light transition-colors duration-300"
                 >
@@ -163,7 +166,7 @@ export function Footer() {
                   className="text-[#5A3E36] hover:text-[#C2A878] font-light transition-colors duration-300"
                 >
                   Contact
-                </Link>
+                </Link> */}
               </nav>
             </div>
           </div>

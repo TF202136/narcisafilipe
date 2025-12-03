@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 
 export default function BraidsHero() {
   return (
-    <section 
+    <section
       className="relative min-h-screen w-full overflow-hidden"
       aria-labelledby="braids-hero-heading"
     >
@@ -42,7 +42,7 @@ export default function BraidsHero() {
           </div>
 
           {/* Headline (MANTIDO PERFEITO) */}
-          <h1 
+          <h1
             id="braids-hero-heading"
             className="text-5xl md:text-7xl lg:text-8xl font-light tracking-[-0.02em] text-white leading-[0.95]"
           >
@@ -54,17 +54,17 @@ export default function BraidsHero() {
           {/* Subcopy refinada */}
           <div className="mt-10 md:mt-12 max-w-2xl mx-auto space-y-8">
             <p className="text-xl md:text-2xl text-white/90 font-light leading-relaxed">
-              Each braid is crafted with patience, precision,  
+              Each braid is crafted with patience, precision,
               and a commitment to your hair's long-term health.
             </p>
-            
+
             <div className="space-y-4">
               <div className="pt-6 border-t border-white/20 max-w-md mx-auto">
                 <p className="text-white/70 text-sm tracking-widest uppercase font-light">
                   Protective • Intentional • Timeless
                 </p>
               </div>
-              
+
               {/* Micro-copy adicional para diferenciação */}
               <p className="text-white/60 text-sm font-light max-w-xs mx-auto">
                 Where artistry meets hair wellness.
@@ -85,9 +85,15 @@ export default function BraidsHero() {
                          transition-all duration-500
                          shadow-[0_8px_32px_rgba(0,0,0,0.15)]"
             >
-              <Link href="/booking">
+              <Link
+                href="https://wa.me/447737891334?text=Hello!%20I%20would%20like%20to%20book%20a%20style.%20Can%20you%20assist%20me?"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block text-[#5A3E36] hover:text-[#C2A878] font-light transition-colors duration-300"
+              >
                 Book a style
               </Link>
+
             </Button>
 
             <Button
@@ -101,16 +107,22 @@ export default function BraidsHero() {
                          hover:border-white/20
                          transition-all duration-500"
             >
-              <Link href="#styles">
+              <Link
+                href="https://www.instagram.com/nf_braids/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block text-[#5A3E36] hover:text-[#C2A878] font-light transition-colors duration-300"
+              >
                 Explore styles →
               </Link>
+
             </Button>
           </div>
         </div>
       </div>
 
       {/* Scroll indicator */}
-      <div 
+      <div
         className="absolute bottom-8 left-1/2 -translate-x-1/2 hidden md:block"
         aria-hidden="true"
       >

@@ -14,7 +14,7 @@ export function HairTherapyWhoFor() {
       ]
     },
     {
-      category: "Restoration & Repair", 
+      category: "Restoration & Repair",
       items: [
         "Damage from colour, chemical or heat treatments",
         "Hair that's lost its natural strength or vitality",
@@ -32,18 +32,18 @@ export function HairTherapyWhoFor() {
   ];
 
   return (
-    <section 
+    <section
       className="w-full bg-gradient-to-b from-[#FAF9F7] to-white py-32 md:py-48 px-6"
       aria-labelledby="who-for-heading"
     >
       <div className="max-w-6xl mx-auto">
-        
+
         {/* Header */}
         <div className="text-center mb-20">
           <span className="text-sm text-[#C2A878] font-light tracking-widest uppercase block mb-6">
             You might be looking for
           </span>
-          
+
           <h2
             id="who-for-heading"
             className="text-4xl md:text-6xl font-light tracking-[-0.02em] text-[#1F1F1F] leading-tight"
@@ -54,7 +54,7 @@ export function HairTherapyWhoFor() {
           </h2>
 
           <p className="mt-8 text-lg md:text-xl font-light text-[#5A3E36]/80 max-w-2xl mx-auto leading-relaxed">
-            Our hair therapy is designed for those seeking thoughtful, 
+            Our hair therapy is designed for those seeking thoughtful,
             personalised attention for their hair and scalp.
           </p>
         </div>
@@ -62,7 +62,7 @@ export function HairTherapyWhoFor() {
         {/* Categories */}
         <div className="grid md:grid-cols-3 gap-12 md:gap-16">
           {careAreas.map((area, i) => (
-            <div 
+            <div
               key={i}
               className="group"
               role="region"
@@ -77,13 +77,13 @@ export function HairTherapyWhoFor() {
 
               <ul className="space-y-5">
                 {area.items.map((item, j) => (
-                  <li 
+                  <li
                     key={j}
                     className="flex items-start gap-4"
                   >
                     <div className="w-1.5 h-1.5 mt-2 rounded-full bg-[#C2A878]/40 
                                   group-hover:bg-[#C2A878] transition-colors duration-500"
-                         aria-hidden="true" />
+                      aria-hidden="true" />
                     <span className="text-base md:text-lg font-light text-[#5A3E36]/90 
                                    leading-relaxed">
                       {item}
@@ -92,7 +92,7 @@ export function HairTherapyWhoFor() {
                 ))}
               </ul>
 
-              <div 
+              <div
                 className="mt-10 w-16 h-px bg-gradient-to-r from-[#C2A878]/20 to-transparent
                          group-hover:w-24 group-hover:from-[#C2A878]/40 
                          transition-all duration-700"
@@ -126,9 +126,15 @@ export function HairTherapyWhoFor() {
                          focus:outline-none focus:ring-2 focus:ring-[#C2A878]/30 focus:ring-offset-2"
               aria-label="Book a hair therapy consultation"
             >
-              <Link href="/booking">
+              <Link
+                href="https://wa.me/447737891334?text=Hello!%20I%20would%20like%20to%20book%20a%20style.%20Can%20you%20assist%20me?"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block text-[#5A3E36] hover:text-[#C2A878] font-light transition-colors duration-300"
+              >
                 Book a conversation
               </Link>
+
             </Button>
           </div>
         </div>

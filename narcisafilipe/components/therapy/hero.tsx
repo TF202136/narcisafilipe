@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 
 export default function HairTherapyHero() {
   return (
-    <section 
+    <section
       className="relative min-h-screen w-full overflow-hidden"
       aria-labelledby="hair-therapy-heading"
     >
@@ -42,7 +42,7 @@ export default function HairTherapyHero() {
           </div>
 
           {/* Headline */}
-          <h1 
+          <h1
             id="hair-therapy-heading"
             className="text-5xl md:text-7xl lg:text-8xl font-light tracking-[-0.02em] text-white leading-[0.95]"
           >
@@ -58,10 +58,10 @@ export default function HairTherapyHero() {
           {/* Subcopy */}
           <div className="mt-10 md:mt-12 max-w-2xl mx-auto space-y-6">
             <p className="text-xl md:text-2xl text-white/90 font-light leading-relaxed">
-              A restorative experience designed to nurture, strengthen  
+              A restorative experience designed to nurture, strengthen
               and support your hair’s natural rhythm.
             </p>
-            
+
             <div className="pt-6 border-t border-white/20 max-w-md mx-auto">
               <p className="text-white/70 text-sm tracking-widest uppercase font-light">
                 Gentle • Restorative • Personalised
@@ -82,9 +82,15 @@ export default function HairTherapyHero() {
                          transition-all duration-500
                          shadow-[0_8px_32px_rgba(0,0,0,0.15)]"
             >
-              <Link href="/booking">
+              <Link
+                href="https://wa.me/447737891334?text=Hello!%20I%20would%20like%20to%20book%20a%20style.%20Can%20you%20assist%20me?"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block text-[#5A3E36] hover:text-[#C2A878] font-light transition-colors duration-300"
+              >
                 Book a consultation
               </Link>
+
             </Button>
 
             <Button
@@ -107,7 +113,7 @@ export default function HairTherapyHero() {
       </div>
 
       {/* Scroll Indicator */}
-      <div 
+      <div
         className="absolute bottom-8 left-1/2 -translate-x-1/2 hidden md:block"
         aria-hidden="true"
       >

@@ -27,20 +27,18 @@ export function Navbar() {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-        scrolled
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${scrolled
           ? "bg-[#F8F7F5]/95 backdrop-blur-sm border-b border-[#EFE9E4]/50"
           : "bg-transparent"
-      }`}
+        }`}
     >
       <nav className="flex h-20 md:h-24 items-center justify-between px-6 md:px-8 mx-auto max-w-7xl">
-        
+
         {/* LOGO */}
         <Link
           href="/"
-          className={`text-2xl font-semibold  md:text-3xl font-light tracking-[-0.02em] transition-all duration-300 ${logoColor} ${
-            !scrolled ? "drop-shadow-[0_2px_8px_rgba(0,0,0,0.3)]" : ""
-          }`}
+          className={`text-2xl font-semibold  md:text-3xl font-light tracking-[-0.02em] transition-all duration-300 ${logoColor} ${!scrolled ? "drop-shadow-[0_2px_8px_rgba(0,0,0,0.3)]" : ""
+            }`}
         >
           NF <span className="text-[#E8D9C2]">Studio</span>
         </Link>
@@ -56,11 +54,10 @@ export function Navbar() {
               >
                 Services
                 <ChevronDown
-                  className={`w-4 h-4 transition-transform duration-300 ${
-                    scrolled
+                  className={`w-4 h-4 transition-transform duration-300 ${scrolled
                       ? "text-[#1F1F1F]/60 group-hover:text-[#C2A878] group-hover:rotate-180"
                       : "text-current group-hover:rotate-180"
-                  }`}
+                    }`}
                 />
               </button>
             </DropdownMenuTrigger>
@@ -88,10 +85,8 @@ export function Navbar() {
               </DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>
-
-          <NavLink href="/gallery" label="Gallery" scrolled={scrolled} />
           <NavLink href="/about" label="About" scrolled={scrolled} />
-          <NavLink href="/contact" label="Contact" scrolled={scrolled} />
+
         </div>
 
         {/* CTA DESKTOP — MANTIDO 100% IGUAL */}
@@ -101,10 +96,9 @@ export function Navbar() {
             className={`
               rounded-full px-7 py-2.5 text-[14px] font-normal
               transition-all duration-500
-              ${
-                scrolled
-                  ? "bg-transparent border border-[#C2A878]/30 text-[#5A3E36] hover:bg-[#C2A878]/5 hover:border-[#C2A878]/50"
-                  : "bg-white/10 backdrop-blur-sm border border-white/20 text-white hover:bg-white/15 hover:border-white/30"
+              ${scrolled
+                ? "bg-transparent border border-[#C2A878]/30 text-[#5A3E36] hover:bg-[#C2A878]/5 hover:border-[#C2A878]/50"
+                : "bg-white/10 backdrop-blur-sm border border-white/20 text-white hover:bg-white/15 hover:border-white/30"
               }
             `}
           >
@@ -118,9 +112,8 @@ export function Navbar() {
             <SheetTrigger asChild>
               <button className="p-2 -mr-2" aria-label="Open menu">
                 <Menu
-                  className={`w-6 h-6 transition-colors duration-300 ${
-                    scrolled ? "text-[#1F1F1F]" : "text-white"
-                  }`}
+                  className={`w-6 h-6 transition-colors duration-300 ${scrolled ? "text-[#1F1F1F]" : "text-white"
+                    }`}
                 />
               </button>
             </SheetTrigger>
@@ -155,9 +148,9 @@ export function Navbar() {
                       />
                     </div>
 
-                    <NavLink href="/gallery" label="Gallery" variant="mobile" onClick={() => setOpen(false)} />
+
                     <NavLink href="/about" label="About" variant="mobile" onClick={() => setOpen(false)} />
-                    <NavLink href="/contact" label="Contact" variant="mobile" onClick={() => setOpen(false)} />
+
                   </div>
                 </div>
 

@@ -27,7 +27,7 @@ export function HairTherapyMethod() {
   return (
     <section
       className="w-full bg-gradient-to-b from-[#FAF9F7] to-[#F5F3F0] py-32 md:py-48 px-6"
-      aria-labelledby="hair-therapy-method-heading"
+      aria-labelledby="hair-therapy-method-heading" id="approach"
     >
       <div className="max-w-6xl mx-auto">
         
