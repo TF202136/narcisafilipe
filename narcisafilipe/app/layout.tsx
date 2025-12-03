@@ -98,6 +98,40 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+
+        {/* LocalBusiness Schema — Google SEO Local */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: `
+            {
+              "@context": "https://schema.org",
+              "@type": "LocalBusiness",
+              "name": "Narcisa Filipe – Scalp & Hair Therapy",
+              "image": "https://narcisafilipe.com/og-image.jpg",
+              "url": "https://narcisafilipe.com",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Unit 8a Berking Avenue",
+                "addressLocality": "Leeds",
+                "postalCode": "LS9",
+                "addressCountry": "GB"
+              },
+              "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": 53.8067,
+                "longitude": -1.5037
+              },
+              "description": "Professional scalp therapy, hair loss treatment, dandruff control and protective braids in Leeds.",
+              "priceRange": "$$"
+            }
+            `,
+          }}
+        />
+
+      </head>
+
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <Navbar />
         {children}
@@ -106,3 +140,4 @@ export default function RootLayout({
     </html>
   );
 }
+

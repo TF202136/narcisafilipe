@@ -35,13 +35,15 @@ export function Footer() {
                     Leeds, UK
                   </p>
                   <a
-                    href="https://maps.google.com/?q=Leeds+UK"
+                    href="https://www.google.com/maps?q=Unit+8A+Berking+Avenue,+Leeds+LS9,+United+Kingdom"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-sm text-[#C2A878] hover:underline mt-2 inline-block"
+                    aria-label="View NF Studio location on Google Maps"
                   >
                     View on maps
                   </a>
+
                 </div>
               </div>
 
@@ -176,7 +178,7 @@ export function Footer() {
         <div className="pt-8 flex flex-col md:flex-row justify-between items-center gap-6">
           <div className="text-center md:text-left">
             <p className="text-sm text-[#5A3E36]/70 font-light">
-              © {currentYear} NF Studio. All rights reserved.
+              © {currentYear} NF Studio. All rights reserved. Designed by Utsupra.
             </p>
             <p className="text-xs text-[#A8A29E] font-light mt-2">
               Leeds, UK • By appointment only
