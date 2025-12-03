@@ -5,7 +5,7 @@ export function ExperienceSection() {
     return (
         <section
             className="relative w-full bg-[#FAF9F7] py-24 md:py-36 overflow-hidden"
-            aria-labelledby="experience-heading"
+            aria-labelledby="experience-heading" id="experience"
         >
             <div className="max-w-6xl mx-auto px-6">
                 {/* Título elegante mas legível */}
@@ -29,12 +29,12 @@ export function ExperienceSection() {
 
                     {/* Hair Therapy Card */}
                     <Link
-                        href="/scalp-therapy"
+                        href="/hair-therapy"
                         className="group block relative overflow-hidden rounded-2xl 
                        bg-white border border-[#EFE9E4] 
                        transition-all duration-500 hover:border-[#E5DCD2]
                        focus:outline-none focus:ring-2 focus:ring-[#C2A878]/30 focus:ring-offset-2"
-                        aria-label="Explore Scalp Therapy services"
+                        aria-label="Explore Hair Therapy services"
                     >
                         <div className="p-12 md:p-16">
                             {/* Ícone sutil ou número */}
