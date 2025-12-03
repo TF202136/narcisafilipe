@@ -128,7 +128,7 @@ export function Footer() {
                   className="w-5 h-5 text-[#C2A878]/60 group-hover:text-[#C2A878] transition-colors"
                   aria-hidden="true"
                 />
-                <span className="text-lg font-light tracking-wide">@narcisafilipe</span>
+                <span className="text-lg font-light tracking-wide">@narcisafilipe_</span>
               </Link>
 
               <p className="text-sm text-[#5A3E36]/70 font-light max-w-xs">
