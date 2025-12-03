@@ -14,7 +14,7 @@ export function Hero() {
       <div className="absolute inset-0 bg-[#2A1E18]"> {/* Fallback sólido */}
         <Image
           src="/home-hero.jpeg"
-          alt="Espaço NF Studio - ambiente acolhedor de terapia capilar e braids"
+          alt="Narcisa Filipe Studio in Leeds – Scalp therapy, hair treatment and braids specialist"
           fill
           priority
           quality={90} /* 100 é excessivo para hero */
@@ -38,7 +38,8 @@ export function Hero() {
         <div className="max-w-6xl mx-auto w-full">
 
           {/* Headline refinada - grande mas não agressiva */}
-          <h1 className="text-5xl md:text-7xl lg:text-8xl font-light tracking-[-0.02em] text-white leading-[0.95]">
+          <h1 className="text-5xl md:text-7xl lg:text-8xl font-light tracking-[-0.02em] text-white leading-[0.95]"
+            aria-label="Certified scalp therapy & hair loss treatment specialist in Leeds - Narcisa Filipe">
             Care
             <br className="hidden md:block" />
             <span className="text-[#EFE9E4]"> for your, </span>
@@ -98,7 +99,7 @@ export function Hero() {
       >
         <div className="flex flex-col items-center gap-2">
           <span className="text-xs text-white/50 font-light tracking-widest uppercase">
-           Explore
+            Explore
           </span>
           <div className="w-px h-16 bg-gradient-to-b from-white/40 to-transparent" />
         </div>
