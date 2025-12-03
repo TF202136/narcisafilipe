@@ -64,7 +64,7 @@ export function AboutHero1() {
             
             <div className="pt-6 border-t border-white/20 max-w-md mx-auto">
               <p className="text-white/70 text-sm tracking-widest uppercase font-light">
-                São Paulo • Since 2023
+                Leeds • Since 2025
               </p>
             </div>
           </div>
