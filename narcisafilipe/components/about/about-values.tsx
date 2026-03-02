@@ -78,7 +78,7 @@ export function AboutValues() {
           </h2>
 
           <p className="mt-8 text-lg font-light text-[#5A3E36]/80 max-w-2xl mx-auto leading-relaxed">
-            These aren't just words — they're the principles that shape every interaction,  
+            These aren't just words, they're the principles that shape every interaction,  
             every technique, and every moment you spend with us.
           </p>
         </div>
@@ -142,7 +142,7 @@ export function AboutValues() {
         <div className="mt-24 pt-10 border-t border-[#EFE9E4]/50 text-center">
           <div className="max-w-2xl mx-auto space-y-4">
             <p className="text-lg font-light text-[#5A3E36] leading-relaxed">
-              These values emerged from two decades of listening, learning,  
+              These values emerged from a decade of listening, learning,  
               and understanding what truly matters in hair care.
             </p>
             <p className="text-sm text-[#A8A29E] font-light tracking-widest uppercase">
