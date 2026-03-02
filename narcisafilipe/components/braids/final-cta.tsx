@@ -59,7 +59,7 @@ export function BraidsFinalCTA() {
             aria-label="Book a braiding style consultation"
           >
             <Link
-              href="https://wa.me/447737891334?text=Hello!%20I%20would%20like%20to%20book%20a%20style.%20Can%20you%20assist%20me?"
+              href="https://wa.me/447961660524?text=Hello!%20I%20would%20like%20to%20book%20a%20style.%20Can%20you%20assist%20me?"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block text-[#5A3E36] hover:text-[#C2A878] font-light transition-colors duration-300"

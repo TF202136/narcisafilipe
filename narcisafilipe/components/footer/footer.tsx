@@ -75,19 +75,19 @@ export function Footer() {
 
                 {/* EMAIL */}
                 <a
-                  href="mailto:hello@narcisafilipe.com"
+                  href="nfstudio@narcisafilipe.com"
                   className="group flex items-center gap-3 text-[#5A3E36] hover:text-[#C2A878] transition-colors duration-300"
                 >
                   <Mail
                     className="w-4 h-4 text-[#C2A878]/60 group-hover:text-[#C2A878] transition-colors"
                     aria-hidden="true"
                   />
-                  <span className="text-lg font-light">hello@narcisafilipe.com</span>
+                  <span className="text-lg font-light">nfstudio@narcisafilipe.com</span>
                 </a>
 
                 {/* WhatsApp placeholder (inactive until UK number) */}
                 <a
-                  href="https://wa.me/+447737891334?text=Hello!%20I%20would%20like%20to%20book%20an%20appointment.%20Can%20you%20assist%20me?"
+                  href="https://wa.me/447961660524?text=Hello!%20I%20would%20like%20to%20book%20an%20appointment.%20Can%20you%20assist%20me?"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="group inline-block text-[#5A3E36] hover:text-[#C2A878] transition-colors duration-300 text-sm"
@@ -99,7 +99,7 @@ export function Footer() {
 
             <div>
               <Link
-                href="https://wa.me/+447737891334?text=Hello!%20I%20would%20like%20to%20book%20an%20appointment.%20Can%20you%20assist%20me?"
+                href="https://wa.me/447961660524?text=Hello!%20I%20would%20like%20to%20book%20an%20appointment.%20Can%20you%20assist%20me?"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block text-[#5A3E36] hover:text-[#C2A878] font-light transition-colors duration-300"
@@ -119,7 +119,7 @@ export function Footer() {
               </h3>
 
               <Link
-                href="https://www.instagram.com/narcisafilipe"
+                href="https://www.instagram.com/narcisafilipe_?igsh=MXh5dDIxY204Mjl6&utm_source=qr"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group flex items-center gap-3 text-[#5A3E36] hover:text-[#C2A878] transition-colors duration-300"

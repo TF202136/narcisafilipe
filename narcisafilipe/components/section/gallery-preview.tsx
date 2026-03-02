@@ -44,7 +44,7 @@ export function GalleryPreview() {
         {/* Botão mais premium */}
         <div className="mt-16">
           <Link
-            href="https://www.instagram.com/narcisafilipe" 
+            href="https://www.instagram.com/narcisafilipe_?igsh=MXh5dDIxY204Mjl6&utm_source=qr" 
             target="_blank"
             rel="noopener noreferrer"
             className="group inline-flex items-center gap-4 px-12 py-5 rounded-full

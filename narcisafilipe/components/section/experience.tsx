@@ -91,7 +91,7 @@ export function ExperienceSection() {
                            transition-colors duration-500"
                                 aria-hidden="true"
                             >
-                                <span className="text-sm font-normal">Explore the styles</span>
+                                <span className="text-sm font-normal">Explore styles</span>
                                 <ArrowRight className="w-4 h-4 translate-x-0 group-hover:translate-x-1.5 transition-transform duration-500" />
                             </div>
                         </div>

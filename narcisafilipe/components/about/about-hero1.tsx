@@ -58,7 +58,7 @@ export function AboutHero1() {
           {/* Subcopy */}
           <div className="mt-10 md:mt-12 max-w-2xl mx-auto space-y-6">
             <p className="text-xl md:text-2xl text-white/90 font-light leading-relaxed">
-              Founded by Narcisa Filipe after twenty years of listening to hair  
+              Founded by Narcisa Filipe after ten years of listening to hair  
               and the stories it carries.
             </p>
             

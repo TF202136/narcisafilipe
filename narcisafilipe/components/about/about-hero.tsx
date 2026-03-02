@@ -45,7 +45,7 @@ export function AboutHero() {
                 The Beginning
               </h2>
               <p className="text-lg font-light text-[#5A3E36] leading-relaxed">
-                NF Studio emerged from Narcisa Filipe's two decades of listening — 
+                NF Studio emerged from Narcisa Filipe's a decade of listening
                 to hair, to stories, to the quiet needs often overlooked in beauty spaces.
               </p>
             </div>
@@ -80,7 +80,7 @@ export function AboutHero() {
             
             <div className="space-y-6">
               <p className="text-base font-light text-[#5A3E36]/80 leading-relaxed">
-                This isn't just a studio — it's a space shaped around patience, 
+                This isn't just a studio, it's a space shaped around patience, 
                 understanding, and the belief that hair care should feel like 
                 a conversation, not a transaction.
               </p>

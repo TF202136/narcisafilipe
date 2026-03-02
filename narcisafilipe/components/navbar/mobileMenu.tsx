@@ -41,7 +41,7 @@ export function MobileMenu({ open, onClose, links }: MobileMenuProps) {
         </nav>
 
         {/* CTA */}
-        <Button className="mt-8">Agendar Consulta</Button>
+        <Button className="mt-8">Book Now</Button>
 
         {/* Theme Toggle */}
         <Button
